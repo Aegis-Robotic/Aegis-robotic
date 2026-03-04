@@ -1,31 +1,16 @@
 {
   "name": "@aegis-robotic/core",
   "version": "0.2.0",
-  "description": "Enterprise AI Safety Firewall for Autonomous Agents - Zero-trust on-device, EU AI Act & CSRD compliant (v0.2 Fortress)",
+  "description": "Aegis Robotic Fortress — Enterprise AI Safety Framework (on-device, EU AI Act & CSRD)",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "bin": {
-    "aegis": "./dist/cli.js"
-  },
+  "bin": {"aegis": "dist/cli.js"},
   "scripts": {
     "build": "tsc",
     "dev": "ts-node examples/verdi-ai-demo.ts",
-    "test": "ts-node tests/run-all.ts",
-    "benchmark": "ts-node benchmarks/pipeline.ts",
-    "cli": "ts-node src/cli.ts"
+    "test": "ts-node tests/run-all.ts"
   },
   "license": "SEE LICENSE IN LICENSE-BSL-MODIFIED.md",
-  "repository": "https://github.com/Aegis-Robotic/Aegis-robotic",
-  "homepage": "https://aegis-robotic.com",
-  "dependencies": {
-    "zod": "^3.23.8",
-    "uuid": "^10.0.0",
-    "yaml": "^2.5.0",
-    "winston": "^3.13.0",
-    "commander": "^12.1.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.5.4",
-    "ts-node": "^10.9.2"
-  }
+  "dependencies": {"zod": "^3.23.8", "uuid": "^10.0.0"},
+  "devDependencies": {"typescript": "^5.5.4", "ts-node": "^10.9.2"}
 }
