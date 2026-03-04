@@ -1,0 +1,23 @@
+{
+  "name": "@aegis-robotic/core",
+  "version": "0.1.0",
+  "description": "AI Safety Firewall for Autonomous Robotic & Software Agents - Zero-trust on-device, EU AI Act & CSRD compliant",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "ts-node tests/guard.test.ts",
+    "dev": "ts-node examples/robot-safety-demo.ts"
+  },
+  "license": "SEE LICENSE IN LICENSE-BSL-MODIFIED.md",
+  "repository": "https://github.com/Aegis-Robotic/Aegis-robotic",
+  "homepage": "https://aegis-robotic.com",
+  "dependencies": {
+    "zod": "^3.23.8",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4",
+    "ts-node": "^10.9.2"
+  }
+}
