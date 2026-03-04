@@ -3,108 +3,84 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aegis Robotic — Firewall IA Zero-Trust pour Agents Autonomes</title>
+  <title>Aegis Robotic — Firewall IA Zero-Trust</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <style>
-    body { font-family: system-ui, sans-serif; }
-    .hero { background: linear-gradient(135deg, #0A0A0A 0%, #1A1A2E 100%); }
-    .glow { text-shadow: 0 0 25px #00D4FF; }
-  </style>
+  <style>body{font-family:system-ui,sans-serif}.hero{background:linear-gradient(135deg,#0A0A0A 0%,#1A1A2E 100%)}.glow{text-shadow:0 0 25px #00D4FF}</style>
 </head>
 <body class="bg-[#0A0A0A] text-white">
 
   <!-- HERO -->
   <section class="hero min-h-screen flex items-center">
-    <div class="max-w-6xl mx-auto px-6 text-center pt-20">
+    <div class="max-w-6xl mx-auto px-6 text-center">
       <h1 class="text-6xl md:text-7xl font-bold tracking-tighter mb-6 glow">AEGIS ROBOTIC</h1>
-      <p class="text-3xl text-gray-300 mb-8">Le pare-feu IA zéro-trust on-device<br>qui protège vos agents autonomes</p>
-      <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="#pricing" class="bg-white text-black px-10 py-5 rounded-2xl font-bold text-lg hover:bg-gray-200 transition">Voir les tarifs</a>
-        <a href="#contact" class="border border-cyan-400 text-cyan-400 px-10 py-5 rounded-2xl font-bold text-lg hover:bg-cyan-400 hover:text-black transition">Essayer gratuitement</a>
-      </div>
+      <p class="text-3xl text-gray-300 mb-10">Le pare-feu IA zéro-trust on-device<br>pour agents autonomes</p>
+      <a href="#pricing" class="bg-cyan-500 hover:bg-cyan-400 text-black font-bold px-10 py-5 rounded-2xl text-xl">Voir les tarifs</a>
     </div>
   </section>
 
   <!-- PRICING -->
-  <section id="pricing" class="py-20 bg-[#111111]">
+  <section id="pricing" class="py-24 bg-[#111111]">
     <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-5xl font-bold text-center mb-4">Tarifs simples et transparents</h2>
-      <p class="text-center text-gray-400 mb-12">Conçu pour les développeurs, startups et entreprises européennes</p>
+      <h2 class="text-5xl font-bold text-center mb-4">Tarifs transparents</h2>
+      <p class="text-center text-gray-400 mb-16">BSL jusqu’en 2030 — tu gardes le contrôle</p>
 
       <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-        <!-- Free -->
-        <div class="bg-[#1A1A1A] rounded-3xl p-8 border border-gray-700 hover:border-cyan-400 transition">
-          <h3 class="text-2xl font-bold">Free</h3>
-          <p class="text-5xl font-bold mt-4">0 €<span class="text-lg font-normal text-gray-400">/mois</span></p>
-          <ul class="mt-8 space-y-4 text-gray-300">
-            <li>✅ 500 runs/mois</li>
+        <div class="bg-[#1A1A1A] p-10 rounded-3xl border border-gray-700 hover:border-cyan-400 transition">
+          <h3 class="text-2xl font-semibold mb-2">Free</h3>
+          <div class="text-5xl font-bold mb-6">0 €<span class="text-sm font-normal text-gray-400">/mois</span></div>
+          <ul class="space-y-4 mb-10 text-gray-300">
+            <li>✅ 100 exécutions/mois</li>
             <li>✅ Guardrails basiques</li>
-            <li>✅ Open-source</li>
-            <li>❌ Support</li>
+            <li>✅ Audit logs</li>
           </ul>
-          <a href="https://github.com/Aegis-Robotic/Aegis-robotic" class="block mt-10 text-center py-4 border border-gray-600 rounded-2xl hover:bg-gray-800">Commencer gratuitement</a>
+          <a href="https://github.com/Aegis-Robotic/Aegis-robotic" class="block w-full text-center border border-gray-600 py-4 rounded-2xl hover:bg-gray-800">Commencer gratuitement</a>
         </div>
 
-        <!-- Pro -->
-        <div class="bg-gradient-to-br from-cyan-500 to-emerald-500 text-black rounded-3xl p-8 scale-105 shadow-2xl relative">
-          <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-black text-white text-sm px-6 py-1 rounded-full">Le plus populaire</div>
-          <h3 class="text-2xl font-bold">Pro</h3>
-          <p class="text-5xl font-bold mt-4">99 €<span class="text-lg font-normal">/mois</span></p>
-          <ul class="mt-8 space-y-4">
+        <div class="bg-gradient-to-b from-cyan-500 to-cyan-600 text-black p-10 rounded-3xl relative scale-105 shadow-2xl">
+          <div class="absolute -top-4 right-8 bg-black text-white text-xs px-4 py-1 rounded-full font-bold">POPULAIRE</div>
+          <h3 class="text-2xl font-semibold mb-2">Pro</h3>
+          <div class="text-5xl font-bold mb-6">99 €<span class="text-sm font-normal">/mois</span></div>
+          <ul class="space-y-4 mb-10">
             <li>✅ Agents illimités</li>
-            <li>✅ Full audit CSRD/EU AI Act</li>
-            <li>✅ Support prioritaire</li>
-            <li>✅ Intégration NanashiOS</li>
+            <li>✅ Full pipeline 5-stages</li>
+            <li>✅ Audit immuable CSRD</li>
+            <li>✅ Support 48h</li>
           </ul>
-          <a href="#contact" class="block mt-10 text-center py-4 bg-black text-white rounded-2xl hover:bg-gray-900">Souscrire maintenant</a>
+          <a href="#contact" class="block w-full text-center bg-black text-white py-4 rounded-2xl font-bold">Choisir Pro</a>
         </div>
 
-        <!-- Enterprise -->
-        <div class="bg-[#1A1A1A] rounded-3xl p-8 border border-gray-700 hover:border-emerald-400 transition">
-          <h3 class="text-2xl font-bold">Enterprise</h3>
-          <p class="text-5xl font-bold mt-4">499 €<span class="text-lg font-normal">/mois</span></p>
-          <ul class="mt-8 space-y-4 text-gray-300">
-            <li>✅ Tout du Pro</li>
-            <li>✅ SSO + On-prem</li>
-            <li>✅ SLA 99.9 %</li>
-            <li>✅ Support dédié + formation</li>
+        <div class="bg-[#1A1A1A] p-10 rounded-3xl border border-gray-700 hover:border-emerald-400 transition">
+          <h3 class="text-2xl font-semibold mb-2">Enterprise</h3>
+          <div class="text-5xl font-bold mb-6">499 €<span class="text-sm font-normal">/mois</span></div>
+          <ul class="space-y-4 mb-10 text-gray-300">
+            <li>✅ Tout le Pro</li>
+            <li>✅ SSO + on-prem</li>
+            <li>✅ Support prioritaire</li>
+            <li>✅ Custom rules</li>
           </ul>
-          <a href="#contact" class="block mt-10 text-center py-4 border border-gray-600 rounded-2xl hover:bg-gray-800">Nous contacter</a>
+          <a href="#contact" class="block w-full text-center border border-emerald-400 text-emerald-400 py-4 rounded-2xl hover:bg-emerald-400 hover:text-black">Contacter sales</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CONTACT FORM -->
-  <section id="contact" class="py-20 bg-black">
+  <!-- FORMULAIRE -->
+  <section id="contact" class="py-24 bg-black">
     <div class="max-w-2xl mx-auto px-6">
-      <h2 class="text-4xl font-bold text-center mb-12">Prêt à sécuriser vos agents ?</h2>
-      
-      <form action="https://formspree.io/f/VOTRE_ID_FORMSPREE" method="POST" class="space-y-6">
-        <div>
-          <label class="block text-sm mb-2">Nom / Entreprise</label>
-          <input type="text" name="name" required class="w-full bg-[#1A1A1A] border border-gray-700 rounded-2xl px-6 py-4 focus:border-cyan-400 outline-none">
-        </div>
-        <div>
-          <label class="block text-sm mb-2">Email professionnel</label>
-          <input type="email" name="email" required class="w-full bg-[#1A1A1A] border border-gray-700 rounded-2xl px-6 py-4 focus:border-cyan-400 outline-none">
-        </div>
-        <div>
-          <label class="block text-sm mb-2">Message (ou tier choisi)</label>
-          <textarea name="message" rows="5" placeholder="Je souhaite tester le tier Pro pour mon projet verdi-ai..." class="w-full bg-[#1A1A1A] border border-gray-700 rounded-3xl px-6 py-4 focus:border-cyan-400 outline-none"></textarea>
-        </div>
-        <button type="submit" class="w-full bg-cyan-400 text-black font-bold py-5 rounded-2xl hover:bg-cyan-300 transition">Envoyer ma demande</button>
+      <h2 class="text-4xl font-bold text-center mb-12">Prêt à sécuriser tes agents ?</h2>
+      <form action="https://formspree.io/f/xblrjqqq" method="POST" class="space-y-6">
+        <input type="text" name="name" placeholder="Ton nom" required class="w-full bg-[#1A1A1A] border border-gray-700 rounded-2xl px-6 py-5 focus:outline-none focus:border-cyan-400">
+        <input type="email" name="email" placeholder="Ton email pro" required class="w-full bg-[#1A1A1A] border border-gray-700 rounded-2xl px-6 py-5 focus:outline-none focus:border-cyan-400">
+        <textarea name="message" rows="5" placeholder="Je veux tester Aegis pour mon reporting CSRD / robotique..." required class="w-full bg-[#1A1A1A] border border-gray-700 rounded-2xl px-6 py-5 focus:outline-none focus:border-cyan-400"></textarea>
+        <button type="submit" class="w-full bg-cyan-500 hover:bg-cyan-400 text-black font-bold py-5 rounded-2xl text-xl">Envoyer ma demande</button>
       </form>
-      
-      <p class="text-center text-sm text-gray-500 mt-8">Réponse sous 24h • Essai gratuit 14 jours sur demande</p>
+      <p class="text-center text-xs text-gray-500 mt-6">Réponse sous 24h • Aucun spam</p>
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer class="bg-[#0A0A0A] py-12 text-center text-sm text-gray-500">
-    © 2026 Aegis Robotic • Licence BSL 1.1 modifiée (2030) • <a href="https://github.com/Aegis-Robotic/Aegis-robotic" class="hover:text-white">GitHub</a>
+  <footer class="bg-black py-12 text-center text-gray-500 text-sm">
+    <p>© 2026 Aegis Robotic • Licence BSL 1.1 modifiée (Change Date 2030-03-04)</p>
   </footer>
-
 </body>
 </html>
