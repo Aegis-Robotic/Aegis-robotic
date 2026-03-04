@@ -7,8 +7,21 @@
 export interface AegisConfig {
   mode: 'zero-trust-ondevice';
   policies: string[];
+  severity: 'low' | 'medium' | 'high';
+  enableStreaming: boolean;
+  auditRetentionDays: number;
+}
+
+export interface SafetyResult {
+  allowed: boolean;
+  score: number;
+  reason: string;
+  blockedActions: string[];
+  complianceScore: number;
+  auditHash: string;
 }
 
 export interface GuardedAgent {
-  execute<T>(input: unknown): Promise<T>;
+  execute<T>(input: any): Promise<T>;
+  executeStream?(input: any): AsyncIterable<any>;
 }
