@@ -3,7 +3,6 @@
  * Change Date: 2030-03-04
  * Copyright (c) 2026 - [Entity Protected - Ownership intentionally obscured for strategic IP protection]
  */
-
 import { program } from 'commander';
 import { AegisGuard } from './AegisGuard';
 
