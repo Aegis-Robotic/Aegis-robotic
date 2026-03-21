@@ -14,11 +14,10 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
-          cache: 'npm'               # ← Cache pour aller plus vite
+          node-version: 22          # Mise à jour pour éviter l’avertissement
+          cache: 'npm'
 
-      - run: npm ci
-
-      - run: npm run lint            # ← Ajout du lint
+      - run: npm install           # ← Changé de "npm ci" vers "npm install"
+      - run: npm run lint
       - run: npm run build
       - run: npm test
