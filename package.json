@@ -8,7 +8,10 @@
   "scripts": {
     "build": "tsc",
     "dev": "ts-node examples/verdi-ai-demo.ts",
-    "test": "ts-node tests/run-all.ts"
+    "test": "ts-node tests/run-all.ts",
+    "lint": "eslint . --ext .ts",
+    "format": "prettier --write .",
+    "prepare": "npm run build"
   },
   "license": "SEE LICENSE IN LICENSE-BSL-MODIFIED.md",
   "dependencies": {"zod": "^3.23.8", "uuid": "^10.0.0"},
