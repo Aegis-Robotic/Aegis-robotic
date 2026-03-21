@@ -4,15 +4,39 @@
   "description": "Aegis Robotic Fortress — Enterprise AI Safety Framework (on-device, EU AI Act & CSRD)",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "bin": {"aegis": "dist/cli.js"},
+  "bin": {
+    "aegis": "dist/cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Aegis-Robotic/Aegis-robotic.git"
+  },
+  "keywords": [
+    "ai-safety",
+    "robotics",
+    "drone",
+    "eu-ai-act",
+    "on-device",
+    "fortress",
+    "swarm",
+    "multi-operator"
+  ],
   "scripts": {
     "build": "tsc",
     "dev": "ts-node examples/verdi-ai-demo.ts",
     "test": "ts-node tests/run-all.ts",
-    "lint": "eslint . --e
+    "lint": "eslint . --ext .ts",
     "format": "prettier --write .",
     "prepare": "npm run build"
   },
   "license": "SEE LICENSE IN LICENSE-BSL-MODIFIED.md",
-  "dependencies": {"zod": "^3.23.8", "uuid": "^10.0.0"},
-  "devDependencies": {"typescript": "^5.5.4", "ts-node": "^10.9.2"}
+  "files": ["dist"],
+  "dependencies": {
+    "zod": "^3.23.8",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4",
+    "ts-node": "^10.9.2"
+  }
+}
