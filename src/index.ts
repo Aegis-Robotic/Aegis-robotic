@@ -3,6 +3,7 @@
  * Change Date: 2030-03-04
  * Copyright (c) 2026 - [Entity Protected - Ownership intentionally obscured for strategic IP protection]
  */
+export { default as Fortress } from './fortress.js';
+export * from './fortress.js';
 
-export { AegisGuard } from './AegisGuard';
-export type { AegisConfig, GuardedAgent } from './types';
+
