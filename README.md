@@ -22,8 +22,3 @@ const guard = new AegisGuard({
   policies: ['no-harmful-actions', 'csrd-compliance', 'no-privacy-leak']
 });
 
-const safeAgent = guard.protect(myAutonomousAgent);
-const result = await safeAgent.execute(task);
-
-npx aegis scan "Génère mon bilan carbone 2025"
-# → ✅ SAFE ou ❌ BLOCKED avec explication détaillée
